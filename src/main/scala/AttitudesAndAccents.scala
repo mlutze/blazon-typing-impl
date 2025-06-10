@@ -48,6 +48,7 @@ object AttitudesAndAccents {
     )
     case MobileCharge.Crosslet => Set(Fitchy)
     case MobileCharge.Crow => Set()
+    case MobileCharge.Crown => Set()
     case MobileCharge.Cup => Set()
     case MobileCharge.DemiLion => Set(
       Addorsed,
@@ -191,6 +192,7 @@ object AttitudesAndAccents {
     case MobileCharge.Cross => Set()
     case MobileCharge.Crosslet => Set()
     case MobileCharge.Crow => Set(Beaked, Membered, Legged, Crowned, DucallyCrowned, Collared, Gorged, DucallyGorged)
+    case MobileCharge.Crown => Set()
     case MobileCharge.Cup => Set()
     case MobileCharge.DemiLion => Set(Langued, Crowned, DucallyCrowned, Collared, Gorged, DucallyGorged)
     case MobileCharge.DexterHand => Set()
@@ -203,6 +205,7 @@ object AttitudesAndAccents {
       DucallyCrowned,
       Legged, Collared, Gorged, DucallyGorged
     )
+    case MobileCharge.ElephantsHead => Set()
     case MobileCharge.ErmineSpot => Set()
     case MobileCharge.Escallop => Set()
     case MobileCharge.Escucheon => Set()

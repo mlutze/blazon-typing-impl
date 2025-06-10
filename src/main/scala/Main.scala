@@ -83,6 +83,7 @@ object Main {
     case Error.TrivialVariation(loc) => "trivial variation"
     case Error.OddVariation(loc) => "odd variation"
     case Error.ImpossibleAlignment(loc) => "impossible alignment"
+    case Error.InvalidAttitudeOrAccent(loc) => "invalid attitude or accent"
   }
 
   private def runTest(file: String): TestResult = {
