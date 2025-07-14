@@ -1,6 +1,6 @@
 # Blazon Typing
 
-This project ocntains an SBT project implementing a Blazon Typechecker.
+This project contains an SBT project implementing a Blazon Typechecker.
 
 ## Running
 
