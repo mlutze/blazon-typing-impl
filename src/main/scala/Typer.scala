@@ -202,7 +202,9 @@ object Typer {
     case OrdinaryDescribed(ord, ln, fill) =>
       // can ignore ordinary and line
       // nothing goes wrong there
-      fill.map(checkFill).map(Background.Undivided(_))
+      val tex = fill.map(checkFill)
+      tex.foreach(checkRuleOfTincture(_, bg))
+      tex.map(Background.Undivided(_))
   }
 
   def checkRuleOfTincture(tex: Texture, bg: Background)(implicit state: State, pos: Positions): Unit = {

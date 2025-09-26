@@ -32,6 +32,10 @@ class TyperTest extends AnyFunSuite with Assertions {
     typeSuccess("Gu. on a bend between two lions arg. a mullet of the first.")
   }
 
+  test("Test.Regression.03") {
+    typeFailure(classOf[Typer.Error.RuleOfTinctureSingle])("Gules a chevron azure.")
+  }
+
   private def typeSuccess(s: String): Unit = {
     implicit val pos = new Positions()
     Parser(pos).parseString(s) match {
